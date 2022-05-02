@@ -1,0 +1,1 @@
+python cool_compartment.py --cools /mnt/data0/wenliang/project/04.TCF1/09.DN3_KO/02.hic_cool/DN3EV.mcool /mnt/data0/wenliang/project/04.TCF1/09.DN3_KO/02.hic_cool/DN3KO.mcool /mnt/data0/wenliang/project/04.TCF1/09.DN3_KO/02.hic_cool/KOG9.mcool --outdir /mnt/data0/wenliang/project/04.TCF1/09.DN3_KO/07.compartments/01.cooltools/01.eigen/

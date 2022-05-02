@@ -1,0 +1,2 @@
+computeMatrix reference-point -R data/CTCT.noTCF1.sample.bed data/TCF1.withCTCF.bed data/TCF1.noCTCF.sample.bed data/noCTCF.noTCF1.bed -S data/CLP.IS.bw data/ETP.IS.bw data/D*.bw --samplesLabel CLP ETP DN2 DN3 DN4 DP -a 250000 -b 250000 --skipZeros --missingDataAsZero -o all.IS.gz --referencePoint center -p 30 --binSize 10
+plotHeatmap -m all.IS.gz --colorMap PiYG --zMin -1 --zMax 1 -o FigureS2A.pdf

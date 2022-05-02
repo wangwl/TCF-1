@@ -1,0 +1,8 @@
+res=read.table("data/res_no_dox_vs_tcf1_72hrs.tab", header=T)
+pdf("FigureS4A.pdf", useDingbats = F)
+with(res, plot(log2FoldChange, -log10(padj), pch=20, main="Volcano plot", xlim=c(-6,6), ylim=c(0,100), col="darkgray"))
+with(subset(res, padj<.05 ), points(log2FoldChange, -log10(padj), pch=20, col="darkgray"))
+with(subset(res, abs(log2FoldChange)>0.5), points(log2FoldChange, -log10(padj), pch=20, col="darkgray"))
+with(subset(res, padj<.05 & (log2FoldChange)>1), points(log2FoldChange, -log10(padj), pch=20, col="firebrick"))
+with(subset(res, padj<.05 & (log2FoldChange)< -1), points(log2FoldChange, -log10(padj), pch=20, col="black"))
+dev.off()

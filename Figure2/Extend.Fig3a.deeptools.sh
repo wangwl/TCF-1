@@ -1,0 +1,2 @@
+computeMatrix reference-point -R data/bound_A.bed data/bound_B.bed data/bound_C.bed data/bound_D.bed data/bound_E.bed data/bound_F.bed data/bound_G.bed data/bound_H.bed data/bound_I.bed -S data/CLP.IS.bw data/ETP.IS.bw data/DN2.IS.bw data/DN3.IS.bw data/DN4.IS.bw data/DP.IS.bw  --samplesLabel CLP ETP DN2 DN3 DN4 DP -a 500000 -b 500000 --skipZeros --missingDataAsZero -o all.IS.gz --referencePoint center -p 30
+plotHeatmap -m all.IS.gz -o FigureS3A.pdf --colorMap PiYG --zMin -1.5 --zMax 1.5 --perGroup

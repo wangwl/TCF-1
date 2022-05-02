@@ -1,0 +1,1 @@
+python /mnt/data0/wenliang/bin/common_bin/cool_compartment.py --cools /mnt/data0/wenliang/project/04.TCF1/03.HiChIP/01.HiChIP_CM/Norm_3T3.mcool /mnt/data0/wenliang/project/04.TCF1/03.HiChIP/01.HiChIP_CM/TCF1_3T3.mcool --outdir /mnt/data0/wenliang/project/04.TCF1/03.HiChIP/02.Compartment/02.cooltools/01.eigen/
